@@ -1,0 +1,33 @@
+.expense-item {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-details h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.expense-details p {
+    margin-bottom: 3px;
+    color: #666;
+}
+
+.expense-actions button {
+    background-color: #e74c3c;
+}
+
+.expense-actions button:hover {
+    background-color: #c0392b;
+}

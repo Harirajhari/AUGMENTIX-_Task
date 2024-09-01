@@ -1,0 +1,90 @@
+.container {
+    padding: 20px;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.expense-item {
+    /* Existing styles */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 600px) {
+    .expense-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .expense-form input {
+        flex: 1 1 30%;
+    }
+
+    .expense-form button {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Dark mode styles */
+.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark .expense-form,
+.dark .expense-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark input {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark button {
+    background-color: #bb86fc;
+}
+
+.dark button:hover {
+    background-color: #985eff;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #357ab8;
+}

@@ -1,0 +1,9 @@
+.expense-list {
+    margin-top: 30px;
+}
+
+.expense-list .no-expenses {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}

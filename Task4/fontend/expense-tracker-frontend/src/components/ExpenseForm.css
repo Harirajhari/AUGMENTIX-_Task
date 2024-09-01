@@ -1,0 +1,14 @@
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expense-form input {
+    font-size: 16px;
+}
+
+.expense-form button {
+    align-self: flex-end;
+    width: 150px;
+}
